@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FFCA6E3D-2097-4811-90A3-88C97A5B51F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Stock_location.Welcome</StartupObject>
+    <RootNamespace>Stock_location</RootNamespace>
+    <AssemblyName>Stock_location</AssemblyName>
+    <ProjectTypeGuids>{68B1623D-7FB9-47D8-8664-7ECEA3297D4F};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <MyType>WindowsForms</MyType>
+    <DeployDirSuffix>Stock_location</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>temp\2_6XR_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>Stock_location.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>Stock_location.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="btCommLibNet, Version=1.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Windows CE Tools\SDKs\BT-W SDK-HT\Lib\ARMv4I\btCommLibNet.dll</HintPath>
+    </Reference>
+    <Reference Include="btFileLibNet, Version=1.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Windows CE Tools\SDKs\BT-W SDK-HT\Lib\ARMv4I\btFileLibNet.dll</HintPath>
+    </Reference>
+    <Reference Include="btLibDefNet, Version=1.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Windows CE Tools\SDKs\BT-W SDK-HT\Lib\ARMv4I\btLibDefNet.dll</HintPath>
+    </Reference>
+    <Reference Include="btScanLibNet, Version=1.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Windows CE Tools\SDKs\BT-W SDK-HT\Lib\ARMv4I\btScanLibNet.dll</HintPath>
+    </Reference>
+    <Reference Include="btSysLibNet, Version=1.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Windows CE Tools\SDKs\BT-W SDK-HT\Lib\ARMv4I\btSysLibNet.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageButton, Version=1.0.5240.30350, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\sadasd\OcrDemoApp\OcrDemoApp\bin\Debug\ImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="Newtonsoft.Json.Compact, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>temp\Newtonsoft.Json.Compact.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=3.0.3600.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="source\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="temp\MainForm.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="source\Check.resx">
+      <DependentUpon>Check.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\Mesb.resx">
+      <DependentUpon>Mesb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\Move.resx">
+      <DependentUpon>Move.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\Move_location.resx">
+      <DependentUpon>Move_location.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\Save_move.resx">
+      <DependentUpon>Save_move.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\Scan.resx">
+      <DependentUpon>Scan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\Scan_m.resx">
+      <DependentUpon>Scan_m.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source\Showpic.resx">
+      <DependentUpon>Showpic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="module\Alert.vb" />
+    <Compile Include="module\Api.vb" />
+    <Compile Include="module\Evk.vb" />
+    <Compile Include="module\Page.vb" />
+    <Compile Include="module\Query_string.vb" />
+    <Compile Include="module\Sqldb.vb" />
+    <Compile Include="source\Check.Designer.vb">
+      <DependentUpon>Check.vb</DependentUpon>
+    </Compile>
+    <Compile Include="source\Check.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process1.vb" />
+    <Compile Include="source\Mesb.Designer.vb">
+      <DependentUpon>Mesb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="source\Mesb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\Move.Designer.vb">
+      <DependentUpon>Move.vb</DependentUpon>
+    </Compile>
+    <Compile Include="source\Move.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\Move_location.Designer.vb">
+      <DependentUpon>Move_location.vb</DependentUpon>
+    </Compile>
+    <Compile Include="source\Move_location.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\Save_move.Designer.vb">
+      <DependentUpon>Save_move.vb</DependentUpon>
+    </Compile>
+    <Compile Include="source\Save_move.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\Scan.Designer.vb">
+      <DependentUpon>Scan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="source\Scan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\Scan_m.Designer.vb">
+      <DependentUpon>Scan_m.vb</DependentUpon>
+    </Compile>
+    <Compile Include="source\Scan_m.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="source\Showpic.Designer.vb">
+      <DependentUpon>Showpic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="source\Showpic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.vb">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="img\nouser.png" />
+    <Content Include="source\dbnetlib.dll" />
+    <Content Include="temp\1_2gZ_icon.ico" />
+    <Content Include="temp\2_6XR_icon.ico" />
+    <Content Include="img\head.bmp" />
+    <Content Include="img\Wow.png" />
+    <Content Include="temp\logoo2_31q_icon.ico" />
+    <Content Include="temp\prayut_N14_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="temp\ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{F184B08F-C81C-45F6-A57F-5ABD9991F28F}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
